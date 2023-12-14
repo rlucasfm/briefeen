@@ -6,4 +6,9 @@ export default createBoard({
     name: 'Auth',
     Board: () => <Page />,
     isSnippet: true,
+    environmentProps: {
+        canvasWidth: 1600,
+        windowWidth: 1592,
+        canvasHeight: 490
+    }
 });

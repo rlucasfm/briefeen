@@ -6,4 +6,8 @@ export default createBoard({
     name: 'LoginForm',
     Board: () => <LoginForm />,
     isSnippet: true,
+    environmentProps: {
+        canvasWidth: 456,
+        windowWidth: 894
+    }
 });

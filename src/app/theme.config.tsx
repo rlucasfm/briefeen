@@ -12,11 +12,10 @@ const poppins = Poppins({
   });
   
     
-const theme = createTheme({
-    
-typography: {
-    fontFamily: poppins.style.fontFamily,
-  },
+export const theme = createTheme({
+  typography: {
+      fontFamily: poppins.style.fontFamily,
+    },
 });
     
 export const ThemeConfig: React.FC<any> = ({ children }) => {
