@@ -37,6 +37,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 aria-label="mailbox folders"
             >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+                {/* Mobile Drawer */}
                 <Drawer
                     variant="temporary"
                     open={mobileOpen}
@@ -51,6 +52,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 >
                     {drawer}
                 </Drawer>
+                {/* Desktop Drawer */}
                 <Drawer
                     variant="permanent"
                     sx={{
