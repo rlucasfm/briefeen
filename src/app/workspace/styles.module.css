@@ -1,0 +1,12 @@
+.blackLink {
+    color: black;
+    text-decoration: none;
+}
+
+.activeLink {
+    color: rgb(169, 6, 169) !important;
+}
+
+.activeLink > li > div {
+    border-bottom: 1px rgb(169, 6, 169) solid;
+}
