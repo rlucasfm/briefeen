@@ -14,8 +14,8 @@ const poppins = Poppins({
     
 export const theme = createTheme({
   typography: {
-      fontFamily: poppins.style.fontFamily,
-    },
+    fontFamily: poppins.style.fontFamily,
+  }
 });
     
 export const ThemeConfig: React.FC<any> = ({ children }) => {

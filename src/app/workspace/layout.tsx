@@ -195,7 +195,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                         </Box>
                     </Box>
                 </Toolbar>
-                <Container maxWidth='xl' >
+                <Container maxWidth='xl' sx={{ marginTop: { xs: '20px', sm: '32px' } }} >
                     {children}
                 </Container>
             </Box>            

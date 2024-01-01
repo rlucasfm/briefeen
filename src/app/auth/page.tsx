@@ -17,7 +17,7 @@ export default function Page() {
                         display: 'none'
                     }
                 }}>
-                    <img src={authImage} alt="People working on briefeen" />
+                    <Image src={authImage} alt="People working on briefeen" />
                     <Typography sx={{ fontSize: '26px', fontWeight: '600'}}>Bem-vindo ao Briefeen</Typography>
                     <Typography sx={{ maxWidth: '400px', textAlign: 'center' }}>Gerencie seus briefings, clientes e projetos com agilidade.</Typography>
                 </Grid>

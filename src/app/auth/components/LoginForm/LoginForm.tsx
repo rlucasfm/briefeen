@@ -2,8 +2,15 @@
 
 import { Box, TextField, Typography } from "@mui/material";
 import { LoginButton, LoginFormBox } from "./styles";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+    const router = useRouter()
+
+    const onLogin = () => {
+        router.push('/workspace/home')
+    }
+
     return(
         <Box sx={{ 
             display: 'flex', 
@@ -20,7 +27,7 @@ export default function LoginForm() {
                 <Typography>Sua senha</Typography>
                 <TextField id="password-login" type="password" label="Senha" placeholder="*********" variant="outlined"/>
             </LoginFormBox>
-            <LoginButton sx={{ marginTop: '20px' }}>Log in</LoginButton>
+            <LoginButton onClick={onLogin} sx={{ marginTop: '20px' }}>Log in</LoginButton>
             <Typography sx={{ marginTop: '20px', fontSize: '16px', fontWeight: '300' }}>Esqueceu sua senha?</Typography>
         </Box>
     )
