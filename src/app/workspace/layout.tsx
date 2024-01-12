@@ -1,10 +1,5 @@
 "use client";
 
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import BusinessIcon from '@mui/icons-material/Business';
-import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import FolderOpenIcon from '@mui/icons-material/FolderOpen';
-import GroupsIcon from '@mui/icons-material/Groups';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,6 +8,7 @@ import { ReactNode, useState } from "react"
 import { IDrawerMenu } from '../interfaces/workspace';
 import styles from './styles.module.css';
 import SearchIcon from '@mui/icons-material/Search';
+import { drawer_menus } from '../utils/drawer/links';
 
 const drawerWidth = 200;
 
@@ -65,34 +61,6 @@ export default function Layout({ children }: { children: ReactNode }) {
     const handleDrawerToggle = () => {
         setMobileOpen((old_state) => !old_state);
     };
-
-    const drawer_menus: IDrawerMenu[] = [
-        {
-            label: 'Workspace',
-            icon: <BusinessIcon />,
-            link: '/workspace/home'
-        },
-        {
-            label: 'Briefings',
-            icon: <AssignmentIcon />,
-            link: '/workspace/briefings'
-        },
-        {
-            label: 'Clientes',
-            icon: <GroupsIcon />,
-            link: '/workspace/clients'
-        },
-        {
-            label: 'Catálogos',
-            icon: <FormatListBulletedIcon />,
-            link: '/workspace/catalogs'
-        },
-        {
-            label: 'Portfolios',
-            icon: <FolderOpenIcon />,
-            link: '/workspace/portfolios'
-        }
-    ];
 
     const drawer = (
         <List sx={{ marginTop: { sm: '96px' } }}>
