@@ -13,11 +13,6 @@ export const drawer_menus: IDrawerMenu[] = [
         link: '/workspace/home'
     },
     {
-        label: 'Briefings',
-        icon: <AssignmentIcon />,
-        link: '/workspace/briefings'
-    },
-    {
         label: 'Clientes',
         icon: <GroupsIcon />,
         link: '/workspace/clients'
