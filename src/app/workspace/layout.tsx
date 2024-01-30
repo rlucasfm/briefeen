@@ -133,7 +133,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                         <MenuIcon />
                     </IconButton>
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-                        <Search sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        <Search sx={{ display: { xs: 'none', sm: 'block', borderBottom: 'solid 1px #d3d3d3' } }}>
                             <SearchIconWrapper>
                                 <SearchIcon />
                             </SearchIconWrapper>
