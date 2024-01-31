@@ -11,7 +11,8 @@ export const CenteredColumnBox = styled(Box)`
         font-weight: 500;
     };
     p:nth-child(2) {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
+        font-style: italic;
     };
 `;
