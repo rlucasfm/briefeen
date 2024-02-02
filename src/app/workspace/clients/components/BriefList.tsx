@@ -2,10 +2,13 @@ import { IBriefList } from "@/app/interfaces/briefings";
 import { generateColor, stringInitial } from "@/utils/helpers";
 import { Avatar, Box, Divider, Grid, Typography } from "@mui/material";
 import PrimaryButton from "@/app/components/Buttons/PrimaryButton/PrimaryButton";
+import { useRouter } from 'next/navigation'
 
 export default function BriefList({ briefs }: { briefs: IBriefList[] }) {
+    const router = useRouter();
+
     const onDetailView = (id: number) => {
-        console.log(id);
+        router.push(`clients/${id}`);
     };
 
     return(
